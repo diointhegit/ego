@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaFileDownload } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { DownloadCVButton } from "./download-cv";
 
 export const Contact = () => {
   return (
@@ -35,14 +36,7 @@ export const Contact = () => {
           >
             <FaLinkedin size={25} />: Denis Silva
           </Link>
-          <Link href={"#"} target="_blank">
-            <button
-              type="button"
-              className="bg-primary rounded-md border-1 border-primary py-2 px-5 text-secondary flex items-center justify-center hover:text-primary hover:bg-secondary cursor-pointer gap-5"
-            >
-              <FaFileDownload className="cursor-pointer" /> Download my CV
-            </button>
-          </Link>
+          <DownloadCVButton />
         </div>
       </div>
     </div>
