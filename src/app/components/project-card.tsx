@@ -30,6 +30,7 @@ export const ProjectCard = ({
       )}
       whileInView={index % 2 == 0 ? moveToLeft : moveToRight}
       initial={index % 2 == 0 ? initialRight : initialLeft}
+      transition={{ delay: 0.25 }}
       viewport={{ once: true }}
     >
       <div className="grid gap-2">
