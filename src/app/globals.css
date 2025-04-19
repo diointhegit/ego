@@ -4,12 +4,29 @@
   --color-primary: #2e5eaa;
   --color-secondary: #d8ddef;
   --color-terciary: #916953;
+  --font-MMX: "MMX", sans-serif;
   --color-accent: #3b1c32;
 }
 
-html,
-body {
-  max-width: 100vw;
+body,
+html {
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+.MMX {
+  font-family: "MMX";
+}
+
+@font-face {
+  font-family: MMX;
+  src: url("/public/mega-man-x.ttf") format("ttf");
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
